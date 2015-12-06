@@ -8,16 +8,51 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UISearchBarDelegate {
 
+    @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var resultadosTV: UITextView!
+    
+    // https://openlibrary.org/api/books?jscmd=data&format=json&bibkeys=ISBN:978-84-376-0494-7
+    
+    let urlBase = "https://openlibrary.org/api/books?jscmd=data&format=json&bibkeys=ISBN:"
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        let isbn = searchBar.text
+        let url:NSURL = NSURL(string: urlBase+isbn!)!
+        let session = NSURLSession.sharedSession()
+        
+        let task = session.downloadTaskWithURL(url) {
+            (
+            let location, let response, let error) in
+            
+            guard let _:NSURL = location, let _:NSURLResponse = response  where error == nil else {
+                print("error")
+                return
+            }
+            
+            if   let data = NSData(contentsOfURL: location!) {
+                dispatch_async(dispatch_get_main_queue(), {
+                    let texto = NSString(data: data, encoding: NSUTF8StringEncoding)
+                    self.resultadosTV.text = texto as! String
+                })
+            }
+        }
+        task.resume()
+    }
+    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
+        
     }
 
 

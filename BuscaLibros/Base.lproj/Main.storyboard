@@ -18,9 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="uYy-qv-nsY">
+                            <searchBar contentMode="redraw" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uYy-qv-nsY">
                                 <rect key="frame" x="0.0" y="97" width="600" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="3Jf-xr-Pmj"/>
+                                </connections>
                             </searchBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xv8-LS-EnQ">
                                 <rect key="frame" x="20" y="188" width="560" height="412"/>
@@ -65,6 +72,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="resultadosTV" destination="xv8-LS-EnQ" id="haA-ye-y0s"/>
+                        <outlet property="searchBar" destination="uYy-qv-nsY" id="gzX-kb-5Ie"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
