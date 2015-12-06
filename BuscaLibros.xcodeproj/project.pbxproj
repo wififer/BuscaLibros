@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B3495041C14427300104DDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3495031C14427300104DDE /* AppDelegate.swift */; };
+		1B3495061C14427300104DDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3495051C14427300104DDE /* ViewController.swift */; };
+		1B3495091C14427300104DDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3495071C14427300104DDE /* Main.storyboard */; };
+		1B34950B1C14427300104DDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B34950A1C14427300104DDE /* Assets.xcassets */; };
+		1B34950E1C14427300104DDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B34950C1C14427300104DDE /* LaunchScreen.storyboard */; };
+		1B3495191C14427300104DDE /* BuscaLibrosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3495181C14427300104DDE /* BuscaLibrosTests.swift */; };
+		1B3495241C14427300104DDE /* BuscaLibrosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3495231C14427300104DDE /* BuscaLibrosUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B3495151C14427300104DDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B3494F81C14427300104DDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B3494FF1C14427300104DDE;
+			remoteInfo = BuscaLibros;
+		};
+		1B3495201C14427300104DDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B3494F81C14427300104DDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B3494FF1C14427300104DDE;
+			remoteInfo = BuscaLibros;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B3495001C14427300104DDE /* BuscaLibros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuscaLibros.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B3495031C14427300104DDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1B3495051C14427300104DDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B3495081C14427300104DDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B34950A1C14427300104DDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B34950D1C14427300104DDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B34950F1C14427300104DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B3495141C14427300104DDE /* BuscaLibrosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuscaLibrosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B3495181C14427300104DDE /* BuscaLibrosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscaLibrosTests.swift; sourceTree = "<group>"; };
+		1B34951A1C14427300104DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B34951F1C14427300104DDE /* BuscaLibrosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuscaLibrosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B3495231C14427300104DDE /* BuscaLibrosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscaLibrosUITests.swift; sourceTree = "<group>"; };
+		1B3495251C14427300104DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B3494FD1C14427300104DDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B3495111C14427300104DDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B34951C1C14427300104DDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B3494F71C14427300104DDE = {
+			isa = PBXGroup;
+			children = (
+				1B3495021C14427300104DDE /* BuscaLibros */,
+				1B3495171C14427300104DDE /* BuscaLibrosTests */,
+				1B3495221C14427300104DDE /* BuscaLibrosUITests */,
+				1B3495011C14427300104DDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B3495011C14427300104DDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B3495001C14427300104DDE /* BuscaLibros.app */,
+				1B3495141C14427300104DDE /* BuscaLibrosTests.xctest */,
+				1B34951F1C14427300104DDE /* BuscaLibrosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B3495021C14427300104DDE /* BuscaLibros */ = {
+			isa = PBXGroup;
+			children = (
+				1B3495031C14427300104DDE /* AppDelegate.swift */,
+				1B3495051C14427300104DDE /* ViewController.swift */,
+				1B3495071C14427300104DDE /* Main.storyboard */,
+				1B34950A1C14427300104DDE /* Assets.xcassets */,
+				1B34950C1C14427300104DDE /* LaunchScreen.storyboard */,
+				1B34950F1C14427300104DDE /* Info.plist */,
+			);
+			path = BuscaLibros;
+			sourceTree = "<group>";
+		};
+		1B3495171C14427300104DDE /* BuscaLibrosTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B3495181C14427300104DDE /* BuscaLibrosTests.swift */,
+				1B34951A1C14427300104DDE /* Info.plist */,
+			);
+			path = BuscaLibrosTests;
+			sourceTree = "<group>";
+		};
+		1B3495221C14427300104DDE /* BuscaLibrosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1B3495231C14427300104DDE /* BuscaLibrosUITests.swift */,
+				1B3495251C14427300104DDE /* Info.plist */,
+			);
+			path = BuscaLibrosUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B3494FF1C14427300104DDE /* BuscaLibros */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B3495281C14427300104DDE /* Build configuration list for PBXNativeTarget "BuscaLibros" */;
+			buildPhases = (
+				1B3494FC1C14427300104DDE /* Sources */,
+				1B3494FD1C14427300104DDE /* Frameworks */,
+				1B3494FE1C14427300104DDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BuscaLibros;
+			productName = BuscaLibros;
+			productReference = 1B3495001C14427300104DDE /* BuscaLibros.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1B3495131C14427300104DDE /* BuscaLibrosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B34952B1C14427300104DDE /* Build configuration list for PBXNativeTarget "BuscaLibrosTests" */;
+			buildPhases = (
+				1B3495101C14427300104DDE /* Sources */,
+				1B3495111C14427300104DDE /* Frameworks */,
+				1B3495121C14427300104DDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B3495161C14427300104DDE /* PBXTargetDependency */,
+			);
+			name = BuscaLibrosTests;
+			productName = BuscaLibrosTests;
+			productReference = 1B3495141C14427300104DDE /* BuscaLibrosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1B34951E1C14427300104DDE /* BuscaLibrosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B34952E1C14427300104DDE /* Build configuration list for PBXNativeTarget "BuscaLibrosUITests" */;
+			buildPhases = (
+				1B34951B1C14427300104DDE /* Sources */,
+				1B34951C1C14427300104DDE /* Frameworks */,
+				1B34951D1C14427300104DDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B3495211C14427300104DDE /* PBXTargetDependency */,
+			);
+			name = BuscaLibrosUITests;
+			productName = BuscaLibrosUITests;
+			productReference = 1B34951F1C14427300104DDE /* BuscaLibrosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B3494F81C14427300104DDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = wififer;
+				TargetAttributes = {
+					1B3494FF1C14427300104DDE = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					1B3495131C14427300104DDE = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 1B3494FF1C14427300104DDE;
+					};
+					1B34951E1C14427300104DDE = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 1B3494FF1C14427300104DDE;
+					};
+				};
+			};
+			buildConfigurationList = 1B3494FB1C14427300104DDE /* Build configuration list for PBXProject "BuscaLibros" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B3494F71C14427300104DDE;
+			productRefGroup = 1B3495011C14427300104DDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B3494FF1C14427300104DDE /* BuscaLibros */,
+				1B3495131C14427300104DDE /* BuscaLibrosTests */,
+				1B34951E1C14427300104DDE /* BuscaLibrosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B3494FE1C14427300104DDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B34950E1C14427300104DDE /* LaunchScreen.storyboard in Resources */,
+				1B34950B1C14427300104DDE /* Assets.xcassets in Resources */,
+				1B3495091C14427300104DDE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B3495121C14427300104DDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B34951D1C14427300104DDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B3494FC1C14427300104DDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B3495061C14427300104DDE /* ViewController.swift in Sources */,
+				1B3495041C14427300104DDE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B3495101C14427300104DDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B3495191C14427300104DDE /* BuscaLibrosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B34951B1C14427300104DDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B3495241C14427300104DDE /* BuscaLibrosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B3495161C14427300104DDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B3494FF1C14427300104DDE /* BuscaLibros */;
+			targetProxy = 1B3495151C14427300104DDE /* PBXContainerItemProxy */;
+		};
+		1B3495211C14427300104DDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B3494FF1C14427300104DDE /* BuscaLibros */;
+			targetProxy = 1B3495201C14427300104DDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1B3495071C14427300104DDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B3495081C14427300104DDE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1B34950C1C14427300104DDE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B34950D1C14427300104DDE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B3495261C14427300104DDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1B3495271C14427300104DDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B3495291C14427300104DDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BuscaLibros/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = coursera.edu.BuscaLibros;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1B34952A1C14427300104DDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BuscaLibros/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = coursera.edu.BuscaLibros;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1B34952C1C14427300104DDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BuscaLibrosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = coursera.edu.BuscaLibrosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuscaLibros.app/BuscaLibros";
+			};
+			name = Debug;
+		};
+		1B34952D1C14427300104DDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BuscaLibrosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = coursera.edu.BuscaLibrosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuscaLibros.app/BuscaLibros";
+			};
+			name = Release;
+		};
+		1B34952F1C14427300104DDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BuscaLibrosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = coursera.edu.BuscaLibrosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BuscaLibros;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1B3495301C14427300104DDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BuscaLibrosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = coursera.edu.BuscaLibrosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BuscaLibros;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B3494FB1C14427300104DDE /* Build configuration list for PBXProject "BuscaLibros" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B3495261C14427300104DDE /* Debug */,
+				1B3495271C14427300104DDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B3495281C14427300104DDE /* Build configuration list for PBXNativeTarget "BuscaLibros" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B3495291C14427300104DDE /* Debug */,
+				1B34952A1C14427300104DDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1B34952B1C14427300104DDE /* Build configuration list for PBXNativeTarget "BuscaLibrosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B34952C1C14427300104DDE /* Debug */,
+				1B34952D1C14427300104DDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1B34952E1C14427300104DDE /* Build configuration list for PBXNativeTarget "BuscaLibrosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B34952F1C14427300104DDE /* Debug */,
+				1B3495301C14427300104DDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B3494F81C14427300104DDE /* Project object */;
+}
