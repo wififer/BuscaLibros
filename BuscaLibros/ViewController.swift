@@ -20,6 +20,9 @@ class ViewController: UIViewController,UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Looks for single or multiple taps.
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
         
     }
 
@@ -46,13 +49,18 @@ class ViewController: UIViewController,UISearchBarDelegate {
                 dispatch_async(dispatch_get_main_queue(), {
                     let texto = NSString(data: data, encoding: NSUTF8StringEncoding)
                     self.resultadosTV.text = texto as! String
+                    self.searchBar.endEditing(true)
                 })
             }
         }
         task.resume()
     }
-    func searchBarCancelButtonClicked(searchBar: UISearchBar) {
-        
+    
+    
+    //Calls this function when the tap is recognized.
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+         self.searchBar.endEditing(true)
     }
 
 
