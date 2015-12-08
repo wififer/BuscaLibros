@@ -14,6 +14,7 @@
 		1B34950E1C14427300104DDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B34950C1C14427300104DDE /* LaunchScreen.storyboard */; };
 		1B3495191C14427300104DDE /* BuscaLibrosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3495181C14427300104DDE /* BuscaLibrosTests.swift */; };
 		1B3495241C14427300104DDE /* BuscaLibrosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3495231C14427300104DDE /* BuscaLibrosUITests.swift */; };
+		1BC477BF1C16E7DD00BDAD4D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC477BE1C16E7DD00BDAD4D /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1B34951F1C14427300104DDE /* BuscaLibrosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuscaLibrosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B3495231C14427300104DDE /* BuscaLibrosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscaLibrosUITests.swift; sourceTree = "<group>"; };
 		1B3495251C14427300104DDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BC477BE1C16E7DD00BDAD4D /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				1B34950A1C14427300104DDE /* Assets.xcassets */,
 				1B34950C1C14427300104DDE /* LaunchScreen.storyboard */,
 				1B34950F1C14427300104DDE /* Info.plist */,
+				1BC477BE1C16E7DD00BDAD4D /* Reachability.swift */,
 			);
 			path = BuscaLibros;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				1B3495061C14427300104DDE /* ViewController.swift in Sources */,
 				1B3495041C14427300104DDE /* AppDelegate.swift in Sources */,
+				1BC477BF1C16E7DD00BDAD4D /* Reachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +488,7 @@
 				1B34952A1C14427300104DDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B34952B1C14427300104DDE /* Build configuration list for PBXNativeTarget "BuscaLibrosTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				1B34952D1C14427300104DDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B34952E1C14427300104DDE /* Build configuration list for PBXNativeTarget "BuscaLibrosUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				1B3495301C14427300104DDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -31,18 +31,19 @@ class ViewController: UIViewController,UISearchBarDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         let isbn = searchBar.text
         let url:NSURL = NSURL(string: urlBase+isbn!)!
         let session = NSURLSession.sharedSession()
-        
+    if Reachability.isConnectedToNetwork() {
         let task = session.downloadTaskWithURL(url) {
             (
             let location, let response, let error) in
             
             guard let _:NSURL = location, let _:NSURLResponse = response  where error == nil else {
                 print("error")
-                return
+            return
+                
             }
             
             if   let data = NSData(contentsOfURL: location!) {
@@ -54,7 +55,17 @@ class ViewController: UIViewController,UISearchBarDelegate {
             }
         }
         task.resume()
+    }else {
+        print("Internet connection not available")
+        let alertController = UIAlertController(title: "Atención!", message:
+            "No hay conexión a internet", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.Default,handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
+        
+    
+}
     
     
     //Calls this function when the tap is recognized.
