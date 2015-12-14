@@ -36,6 +36,8 @@ func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         let url:NSURL = NSURL(string: urlBase+isbn!)!
         let session = NSURLSession.sharedSession()
     if Reachability.isConnectedToNetwork() {
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+
         let task = session.downloadTaskWithURL(url) {
             (
             let location, let response, let error) in
@@ -50,6 +52,8 @@ func searchBarSearchButtonClicked(searchBar: UISearchBar) {
                 dispatch_async(dispatch_get_main_queue(), {
                     let texto = NSString(data: data, encoding: NSUTF8StringEncoding)
                     self.resultadosTV.text = texto as! String
+                    UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+
                     self.searchBar.endEditing(true)
                 })
             }
