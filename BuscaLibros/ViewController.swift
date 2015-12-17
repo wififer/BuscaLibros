@@ -11,12 +11,17 @@ import UIKit
 class ViewController: UIViewController,UISearchBarDelegate {
 
     @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var resultadosTV: UITextView!
+   
     
     // https://openlibrary.org/api/books?jscmd=data&format=json&bibkeys=ISBN:978-84-376-0494-7
     
     let urlBase = "https://openlibrary.org/api/books?jscmd=data&format=json&bibkeys=ISBN:"
     
+    @IBOutlet weak var titulo: UITextView!
+    
+    @IBOutlet weak var autor: UITextView!
+    
+    @IBOutlet weak var portada: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +37,7 @@ class ViewController: UIViewController,UISearchBarDelegate {
     }
     
 func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-        let isbn = searchBar.text
+        var isbn = searchBar.text
         let url:NSURL = NSURL(string: urlBase+isbn!)!
         let session = NSURLSession.sharedSession()
     if Reachability.isConnectedToNetwork() {
@@ -49,14 +54,30 @@ func searchBarSearchButtonClicked(searchBar: UISearchBar) {
             }
             
             if   let data = NSData(contentsOfURL: location!) {
-                dispatch_async(dispatch_get_main_queue(), {
-                    let texto = NSString(data: data, encoding: NSUTF8StringEncoding)
-                    self.resultadosTV.text = texto as! String
-                    UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+                
+                do {
+                  let json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableLeaves)
+                    print("json.count: ",json.count)
+                    if (json.count != 0){
+                        let dico1 = json as! NSDictionary
+                        isbn = "ISBN:"+isbn!
+                        let dico2 = dico1[isbn!] as! NSDictionary
+                        print("dico2: ",dico2)
+                        
+                        dispatch_async(dispatch_get_main_queue(), {
+                            //  let texto = NSString(data: data, encoding: NSUTF8StringEncoding)
+                            UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+                            // self.titulo.text = dico2
+                            self.searchBar.endEditing(true)
+                        })
+                    }
+                  
 
-                    self.searchBar.endEditing(true)
-                })
-            }
+                }catch _{
+                    
+                }
+                
+                           }
         }
         task.resume()
     }else {
