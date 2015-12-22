@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Autor(es)"; ObjectID = "T0m-zb-MEq"; */
+"T0m-zb-MEq.text" = "Autor(es)";
+
+/* Class = "UILabel"; text = "Título"; ObjectID = "kOc-OB-ffw"; */
+"kOc-OB-ffw.text" = "Título";
+
+/* Class = "UISearchBar"; placeholder = "ISBN"; ObjectID = "uYy-qv-nsY"; */
+"uYy-qv-nsY.placeholder" = "ISBN";
+
+/* Class = "UISearchBar"; prompt = "BUSQUE SU LIBRO"; ObjectID = "uYy-qv-nsY"; */
+"uYy-qv-nsY.prompt" = "BUSQUE SU LIBRO";
+
+/* Class = "UISearchBar"; uYy-qv-nsY.scopeButtonTitles[0] = "Title"; ObjectID = "uYy-qv-nsY"; */
+"uYy-qv-nsY.scopeButtonTitles[0]" = "Title";
+
+/* Class = "UISearchBar"; uYy-qv-nsY.scopeButtonTitles[1] = "Title"; ObjectID = "uYy-qv-nsY"; */
+"uYy-qv-nsY.scopeButtonTitles[1]" = "Title";
